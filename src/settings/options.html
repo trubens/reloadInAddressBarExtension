@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <style>
+      form {
+        font-size: 130%;
+      }
+
+      .blue {
+        color: #0076D6;
+      }
+
+      .alert {
+        padding: 10px 10px;
+        margin-top: 15px;
+        border: 1px solid rgb(197, 187, 80);
+        background: rgb(228, 221, 132);
+      }
+    </style>
+  </head>
+
+  <body>
+    <section>
+    <h1>Theme color</h1>
+    <form>
+        <p>Please select your current theme:</p>
+        <div>
+          <div>
+            <input type="radio" id="light-theme" name="theme" value="light">
+            <label for="light-theme">Default or light theme</label>
+          </div>
+          <div>
+            <input type="radio" id="dark-theme" name="theme" value="dark">
+            <label for="dark-theme">Dark theme</label>
+          </div>
+          <div>
+            <input type="radio" id="blue-theme" name="theme" value="blue">
+            <label for="blue-theme">I'm feeling <span class="blue">blue</span></label>
+          </div>
+        </div>
+      </form>
+    </section>
+    <section class="alert">
+      The new icon theme will apply the next time you use the tab (for example reload or navigate).
+    </section>
+
+    <script src="options.js"></script>
+
+  </body>
+
+</html>

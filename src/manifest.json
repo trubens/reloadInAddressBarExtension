@@ -1,0 +1,39 @@
+{
+  "manifest_version": 2,
+  "name": "Reload in address bar",
+  "version": "1.4",
+  "author": "Peder Lång Skeidsvoll",
+  "homepage_url": "http://truben.no",
+
+  "description": "Moves the reload bar to the address bar",
+
+  "applications": {
+    "gecko": {
+      "strict_min_version": "57.0"
+    }
+  },
+
+  "icons": {
+    "48": "icons/refresh-48.svg"
+  },
+
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "storage"
+  ],
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  "options_ui": {
+    "page": "settings/options.html"
+  },
+
+  "page_action": {
+    "default_icon": "icons/refresh-16-light.svg",
+    "default_title": "Reload page",
+    "browser_style": true
+  }
+}
