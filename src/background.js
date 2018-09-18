@@ -38,7 +38,11 @@ chrome.pageAction.onClicked.addListener(function(aTab, event) {
             });
             break;
         case TabStatus.COMPLETE:
-            chrome.tabs.reload();
+            if(event.ctrKey) {
+                chrome.tabs.duplicate(chrome.tabs.currentTab.id);
+            } else {
+                chrome.tabs.reload();
+            }
             break;
     }
 });
