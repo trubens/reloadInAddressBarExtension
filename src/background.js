@@ -39,7 +39,9 @@ chrome.pageAction.onClicked.addListener(function(aTab, event) {
             break;
         case TabStatus.COMPLETE:
             if(event.ctrKey) {
-                chrome.tabs.duplicate(chrome.tabs.currentTab.id);
+                chrome.tabs.duplicate(aTab.id);
+            } else if(event.shiftKey) {
+                chrome.tabs.reload({bypassCache: true});
             } else {
                 chrome.tabs.reload();
             }
