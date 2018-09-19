@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Reload in address bar",
-  "version": "1.4",
+  "version": "1.6",
   "author": "Peder Lång Skeidsvoll",
   "homepage_url": "http://truben.no",
 
@@ -17,10 +17,19 @@
     "48": "icons/refresh-48.svg"
   },
 
-  "permissions": [
+   "permissions": [
     "activeTab",
     "tabs",
-    "storage"
+    "storage",
+    "<all_urls>"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": [ "/js/content.js" ],
+      "run_at": "document_start"
+    }
   ],
 
   "background": {
