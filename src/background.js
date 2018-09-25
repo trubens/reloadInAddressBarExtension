@@ -39,13 +39,13 @@ chrome.pageAction.onClicked.addListener(function(aTab) {
             break;
         case TabStatus.COMPLETE:
         	chrome.tabs.sendMessage(aTab.id, "riab-testModifiers", function(responseValue) {
-				if (!responseValue) {
-					chrome.tabs.reload();
-				} else if (responseValue.indexOf("ctrl")>-1) {
+				if (responseValue.ctrl) {
 					chrome.tabs.duplicate(aTab.id);
-				} else if (responseValue.indexOf("shift")>-1) {
+				} else if (responseValue.shift) {
 					chrome.tabs.reload({bypassCache: true});
-				}
+				} else {
+					chrome.tabs.reload();
+                }
         	});
             break;
     }

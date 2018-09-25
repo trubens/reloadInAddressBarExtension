@@ -8,16 +8,14 @@
     return;
   }
   window.modifiersSetup = true;
-  var modifiersState = "";
+  var modifiersState = {};
 
-	var modifierCallback;
 	var interactionListener = function(event){
-		var responseValue = "";
-		responseValue += (event.ctrlKey || event.metaKey) ? "ctrl" : "";
-		responseValue += (event.shiftKey) ? "shift" : "";
-		responseValue += (event.altKey) ? "alt" : "";
-		modifiersState = responseValue;
-		console.log("modifiersState: " + modifiersState);
+		modifiersState = {
+		ctrl: (event.ctrlKey || event.metaKey),
+		shift: event.shiftKey,
+		alt: event.altKey };
+		//console.log(modifiersState);
 	};
 
 	window.addEventListener("mousemove", interactionListener)
