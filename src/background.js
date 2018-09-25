@@ -26,7 +26,7 @@ chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
     });
 })
 
-chrome.pageAction.onClicked.addListener(function(aTab, event) {
+chrome.pageAction.onClicked.addListener(function(aTab) {
     const TabStatus = chrome.tabs.TabStatus;
 
     switch(aTab.status) {
@@ -38,11 +38,15 @@ chrome.pageAction.onClicked.addListener(function(aTab, event) {
             });
             break;
         case TabStatus.COMPLETE:
-            if(event.ctrKey) {
-                chrome.tabs.duplicate(chrome.tabs.currentTab.id);
-            } else {
-                chrome.tabs.reload();
-            }
+        	chrome.tabs.sendMessage(aTab.id, "riab-testModifiers", function(responseValue) {
+				if (!responseValue) {
+					chrome.tabs.reload();
+				} else if (responseValue.indexOf("ctrl")>-1) {
+					chrome.tabs.duplicate(aTab.id);
+				} else if (responseValue.indexOf("shift")>-1) {
+					chrome.tabs.reload({bypassCache: true});
+				}
+        	});
             break;
     }
 });
