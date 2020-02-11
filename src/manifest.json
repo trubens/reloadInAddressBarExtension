@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Reload in address bar",
-  "version": "1.8",
+  "version": "1.9",
   "author": "Peder Lång Skeidsvoll",
   "homepage_url": "http://truben.no",
 
@@ -9,7 +9,7 @@
 
   "applications": {
     "gecko": {
-      "strict_min_version": "57.0"
+      "strict_min_version": "72.0"
     }
   },
 

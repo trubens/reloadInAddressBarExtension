@@ -26,7 +26,7 @@ chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
     });
 })
 
-chrome.pageAction.onClicked.addListener(function(aTab, event) {
+chrome.pageAction.onClicked.addListener(function(aTab, OnClickData) {
     const TabStatus = chrome.tabs.TabStatus;
 
     switch(aTab.status) {
@@ -38,7 +38,13 @@ chrome.pageAction.onClicked.addListener(function(aTab, event) {
             });
             break;
         case TabStatus.COMPLETE:
-            chrome.tabs.reload();
+            const isMiddleClick = OnClickData.button === 1;
+            const isCtrlClick = OnClickData.modifiers.includes('Ctrl');
+            if (isMiddleClick || isCtrlClick) {
+                chrome.tabs.duplicate(aTab.id);
+            } else {
+                chrome.tabs.reload();
+            }
             break;
     }
 });
