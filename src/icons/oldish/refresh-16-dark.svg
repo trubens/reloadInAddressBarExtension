@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+
+<svg
+   width="16"
+   height="16"
+   viewBox="0 0 16 16"
+   version="1.1"
+   id="svg4"
+   sodipodi:docname="refresh-16-dark.svg"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs8" />
+  <sodipodi:namedview
+     id="namedview6"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="41.5"
+     inkscape:cx="8"
+     inkscape:cy="8"
+     inkscape:window-width="1920"
+     inkscape:window-height="1020"
+     inkscape:window-x="1920"
+     inkscape:window-y="32"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg4" />
+  <path
+     id="path2"
+     d="M 7.9199219 1.3496094 C 5.6913678 1.3748579 3.4753163 2.503509 2.2148438 4.7265625 C -0.30610155 9.1726696 2.8887981 14.654252 8 14.650391 A 0.35003499 0.35003499 0 0 0 8.0019531 14.650391 C 9.7661731 14.655355 11.457036 13.953974 12.701172 12.703125 C 12.864834 12.531814 12.906384 12.378132 12.896484 12.226562 C 12.886459 12.073709 12.809518 11.914987 12.689453 11.794922 C 12.569388 11.674854 12.412618 11.599874 12.259766 11.589844 C 12.106913 11.579819 11.952365 11.619955 11.779297 11.787109 C 9.9408367 13.654394 7.4080209 13.784469 5.4824219 12.785156 C 3.5546823 11.784733 2.2014926 9.6340272 2.6738281 7.0527344 C 3.1461637 4.4714415 5.1729884 2.9404648 7.3300781 2.6875 C 9.4871678 2.4345352 11.812675 3.456332 12.869141 5.859375 A 0.35003499 0.35003499 0 0 1 12.548828 6.3496094 L 10 6.3496094 C 9.7541671 6.3496094 9.6142397 6.4295857 9.5117188 6.5449219 C 9.4091974 6.6602581 9.3496094 6.8277779 9.3496094 7 C 9.3496094 7.1722221 9.4091976 7.3397419 9.5117188 7.4550781 C 9.6142397 7.5704146 9.7541671 7.6503906 10 7.6503906 L 15 7.6503906 C 15.36313 7.6503906 15.650391 7.3631303 15.650391 7 L 15.650391 2 C 15.650391 1.6368697 15.36313 1.3496094 15 1.3496094 C 14.63687 1.3496094 14.349609 1.6368697 14.349609 2 L 14.349609 4.4179688 A 0.35003499 0.35003499 0 0 1 13.699219 4.5976562 C 12.388719 2.4036454 10.148476 1.3243604 7.9199219 1.3496094 z "
+     style="fill:#b1b1b3;fill-opacity:1" />
+</svg>
